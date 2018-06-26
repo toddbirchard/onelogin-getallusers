@@ -1,13 +1,13 @@
 import requests
 import pandas as pd
 import numpy as np
+import json
 from token import token
 
 base_url = 'https://api.us.onelogin.com/api/1/'
 page = 1
 
 token_url = 'https://api.us.onelogin.com/auth/oauth2/v2/token'
-page_array = []
 
 def setKeys():
     headers = {"Authorization":"Bearer " + token}
@@ -40,6 +40,5 @@ def getAllusers():
     users_df = pd.DataFrame(columns=r.json()['data'][0].keys())
     if nextpage:
         getNextPage(nextpage)
-
 
 getAllusers()

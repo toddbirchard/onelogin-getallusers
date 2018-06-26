@@ -1,7 +1,8 @@
 # Onelogin - Get All users
 
 Onelogin has a number of interface related issues which make large user exports difficult:
-* UI limitiation of 5000 users maximum
+
+* UI limitation of 5000 users maximum
 * Quickly expiring API tokens
 * Results paginated at 50 users
 
