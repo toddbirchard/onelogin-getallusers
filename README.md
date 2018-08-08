@@ -30,3 +30,6 @@ Run script
 ```
 python3 onelogin.py
 ```
+## Future Builds
+
+This repository will be extended to include ways to easily extract from any similar APIs using a simple GUI.
